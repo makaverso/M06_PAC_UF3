@@ -20,8 +20,8 @@ public class HibernateMain {
 
         //COMENZAMOS NUESTRA TANSACCIÓN: EJECUTAMOS LAS QUERIES
         //Creamos 3 objetos en cada una de las tres clases (que serán 3 tablas en nuestra BBDD)
-        Alumno a = new Alumno("Victor","español",31,"masculino");
-        Profesor p = new Profesor ("Minerva","femenino");
+        Alumno a = new Alumno("Victor","español",31,"masculino", "m06");
+        Profesor p = new Profesor ("Alvaro","masculino");
         Modulo m = new Modulo ("Acceso a Datos","M06");
 
         //Guardamos cada objeto en cada una de nuestras tablas (clases)
@@ -35,14 +35,16 @@ public class HibernateMain {
         guardaEnFicheroBinario(p, "Registro.dat");
         guardaEnFicheroBinario(m, "Registro.dat");
 
-        leerFicheroBinario("Registro.dat");
+        //leerFicheroBinario("Registro.dat");
 
-        /*Query query = session.createQuery("FROM Alumno WHERE nombre =:nombre");
-        query.setParameter("nombre","Juanito de las Arenas");
+        //Hacemos una consulta a la tabla Alumno para ver que funciona correctamente
+        Query query = session.createQuery("FROM Alumno WHERE nombre =:nombre");
+        query.setParameter("nombre","Victor");
         List list = query.list();
         for(int i=0;i<list.size();i++){
             System.out.println(list.get(i).toString());
-        }*/
+        }
+
 
         //LANZAMOS LAS QUERIES
         tx.commit();

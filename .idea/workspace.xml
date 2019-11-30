@@ -15,13 +15,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UI0SU1XUiqC6IaghTbmzxx9ely" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/00-JavaLibraries/hibernate-release-5.4.9.Final/lib/required/txw2-2.3.1.jar!/" />
+    <property name="last_opened_file_path" value="E:/01 - PROGRAMAS/04 - DAM/06 - Acceso a Datos/00 - Libraries/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -40,6 +44,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate.HibernateMain" />
+      <module name="M06_PAC_UF3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HibernateMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,5 +76,18 @@
       <updated>1575028801246</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

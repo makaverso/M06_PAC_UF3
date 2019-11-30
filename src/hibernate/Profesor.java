@@ -5,6 +5,11 @@ public class Profesor implements Serializable {
     int idProfesor;
     String nombre, sexo;
 
+    /*public Profesor (){
+        this.nombre = "Nombre_profesor";
+        this.sexo = "Sexo";
+    }*/
+
     public Profesor (String nombre, String sexo){
         this.nombre=nombre;
         this.sexo=sexo;

@@ -6,17 +6,22 @@ public class Modulo implements Serializable {
     String nombre;
     String codigo;
 
+    /*public Modulo (){
+        this.nombre = "Nombre_modulo";
+        this.codigo="cod.XX";
+    }*/
+
     public Modulo(String nombre, String codigo){
         this.nombre=nombre;
         this.codigo=codigo;
     }
 
-    public int getIdProfesor() {
+    public int getIdModulo() {
         return idModulo;
     }
 
-    public void setIdModulo(int idProfesor) {
-        this.idModulo = idProfesor;
+    public void setIdModulo(int idModulo) {
+        this.idModulo = idModulo;
     }
 
     public String getNombre() {

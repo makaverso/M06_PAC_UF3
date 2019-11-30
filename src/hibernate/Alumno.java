@@ -2,17 +2,31 @@ package hibernate;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Alumno implements Serializable {
     int idAlumno, edad;
-    String nombre, nacionalidad, sexo;
-    ArrayList arrayListModulos;
+    String nombre, nacionalidad, sexo, modulo;
+    //ArrayList <String> arrayListModulos = new ArrayList<String>();
 
-    public Alumno(String nombre, String nacionalidad, int edad, String sexo){
+
+    public Alumno(){
+        this.nombre="Nombre";
+        this.nacionalidad="Nacionalidad";
+        this.edad=00;
+        this.sexo="Sexo";
+        this.modulo="modulo";
+        //arrayListModulos.add(modulo);
+    }
+
+    public Alumno(String nombre, String nacionalidad, int edad, String sexo, String modulo){
         this.nombre=nombre;
         this.nacionalidad=nacionalidad;
         this.edad=edad;
         this.sexo=sexo;
+        this.modulo=modulo;
+        //arrayListModulos.add(modulo);
+
     }
 
 
@@ -56,13 +70,21 @@ public class Alumno implements Serializable {
         this.sexo = sexo;
     }
 
-    public ArrayList getArrayListModulos() {
+    public String getModulo() {
+        return modulo;
+    }
+
+    public void setModulo(String modulo) {
+        this.modulo = modulo;
+    }
+
+    /*public ArrayList getArrayListModulos() {
         return arrayListModulos;
     }
 
     public void setArrayListModulos(ArrayList arrayListModulos) {
         this.arrayListModulos = arrayListModulos;
-    }
+    }*/
 
     @Override
     public String toString() {
@@ -72,6 +94,6 @@ public class Alumno implements Serializable {
                 ", Nacionalidad = "+nacionalidad+
                 ", Edad = "+edad+
                 ", Sexo = "+sexo+
-                "\n     Módulos = "+arrayListModulos.toString();
+                "\n     Módulos = "+modulo;
     }
 }
